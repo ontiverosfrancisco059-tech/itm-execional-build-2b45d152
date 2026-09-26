@@ -1,305 +1,307 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Execional Build | Paquetes de páginas web con tienda online en Campeche</title>
-<meta name="description" content="Execional Build en Campeche: vendemos paquetes de páginas web personalizables con sistema de ventas y tienda online para que vendas tus productos. Lunes a sábado de 8 a 6 pm. Tel 9811332914.">
-<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Execional Build — Paquetes de páginas web con tienda online</title>
+<meta name="description" content="Execional Build en Campeche: vendemos paquetes de páginas web personalizables con sistema de ventas y tienda online para que vendas tus productos." />
+<link rel="stylesheet" href="styles.css" />
 <style>
 :root{
-  --bg:#0b1020; --bg2:#111936; --card:#151d3d; --card2:#1a2450;
-  --line:rgba(255,255,255,.12); --txt:#f2f5ff; --muted:#b9c2df;
-  --violet:#7c5cff; --cyan:#2dd4bf; --amber:#ffb020; --pink:#ff5ca8;
-  --radius:18px; --shadow:0 18px 50px rgba(0,0,0,.35);
+  --bg:#0b1020;--bg2:#111936;--card:#161f45;--card2:#1c2653;
+  --line:rgba(255,255,255,.12);--txt:#f2f4ff;--mut:#b9c1e6;
+  --ac:#ffb703;--ac2:#7c5cff;--ac3:#22d3aa;--r:18px;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;background:radial-gradient(900px 500px at 15% 0%,#22307a 0%,transparent 60%),radial-gradient(800px 500px at 90% 10%,#3b1d6e 0%,transparent 60%),radial-gradient(700px 600px at 50% 100%,#0e3a3a 0%,transparent 60%),var(--bg);color:var(--txt);line-height:1.6}
+body{margin:0;font-family:var(--font);background:radial-gradient(900px 500px at 85% -5%,#2a2f8a 0%,transparent 60%),radial-gradient(700px 420px at -10% 15%,#5b2a86 0%,transparent 55%),var(--bg);color:var(--txt)}
 a{color:inherit}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;z-index:50;background:rgba(11,16,32,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;gap:16px;padding:14px 0}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900;letter-spacing:.3px}
-.logo-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--violet),var(--cyan));display:grid;place-items:center;font-weight:900;color:#0b1020;box-shadow:var(--shadow)}
-.logo small{display:block;font-weight:600;color:var(--muted);font-size:12px;letter-spacing:.6px;text-transform:uppercase}
-.links{display:flex;gap:18px;margin-left:auto;align-items:center}
-.links a.nl{text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
-.links a.nl:hover{color:#fff}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid transparent;cursor:pointer}
-.btn-primary{background:linear-gradient(135deg,var(--violet),#4a8cff);color:white;box-shadow:0 10px 30px rgba(124,92,255,.4)}
-.btn-ghost{border-color:var(--line);background:rgba(255,255,255,.06);color:var(--txt)}
-.btn-light{background:#fff;color:#0b1020}
-.btn-sm{padding:9px 14px;font-size:14px;border-radius:10px}
-.burger{display:none;margin-left:auto;background:rgba(255,255,255,.08);border:1px solid var(--line);color:#fff;border-radius:10px;padding:9px 12px;font-size:18px}
-.hero{padding:56px 0 30px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:50;background:rgba(11,16,32,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-mark{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-weight:900;background:linear-gradient(135deg,var(--ac2),#c86bff 55%,var(--ac));color:#0b1020;font-size:22px}
+.brand b{display:block;line-height:1;font-size:18px;letter-spacing:.2px}
+.brand small{display:block;color:var(--mut);font-size:12px;letter-spacing:.6px}
+.links{display:flex;gap:18px;align-items:center}
+.links a{color:var(--mut);text-decoration:none;font-size:15px}
+.links a:hover{color:#fff}
+.cta-row{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--txt);padding:11px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;cursor:pointer}
+.btn.solid{background:linear-gradient(135deg,var(--ac),#ff8a00);border-color:transparent;color:#1a1000}
+.btn.violet{background:linear-gradient(135deg,var(--ac2),#b16bff);border-color:transparent;color:#fff}
+.btn.ghost{background:transparent}
+.btn:hover{transform:translateY(-1px)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;color:#fff;padding:8px 11px;font-size:18px}
+.hero{padding:64px 0 28px}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
-.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:rgba(45,212,191,.14);border:1px solid rgba(45,212,191,.35);color:#9ef0e2;font-size:13px;font-weight:700}
-h1{font-size:clamp(32px,5vw,56px);line-height:1.05;margin:16px 0}
-h1 span{background:linear-gradient(90deg,#a99bff,#5eead4,#ffd166);-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{color:var(--muted);font-size:18px;max-width:58ch}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}
-.mini{display:flex;gap:10px;flex-wrap:wrap;margin:0;padding:0;list-style:none}
-.mini li{display:flex;gap:8px;align-items:center;background:rgba(255,255,255,.07);border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-size:14px;color:#e6ebff}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
-.stat{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:14px;padding:14px}
-.stat strong{font-size:22px;display:block}
-.stat span{color:var(--muted);font-size:13px}
-.mock{background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
-.mock-bar{display:flex;gap:8px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line);background:rgba(0,0,0,.25)}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(124,92,255,.16);border:1px solid rgba(124,92,255,.45);padding:7px 13px;border-radius:999px;font-size:13px;color:#dcd4ff}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.02;margin:18px 0 14px;letter-spacing:-1px}
+h1 span{background:linear-gradient(90deg,var(--ac),#ff7a3d,#c86bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mut);font-size:clamp(16px,2vw,19px);line-height:1.6;margin:0 0 22px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.mini{display:flex;gap:16px;flex-wrap:wrap;color:var(--mut);font-size:14px}
+.mini strong{color:#fff}
+.mock{background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.mock-bar{display:flex;gap:8px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);background:rgba(0,0,0,.25)}
 .dot{width:11px;height:11px;border-radius:50%}
-.url{margin-left:8px;flex:1;background:rgba(255,255,255,.08);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;color:var(--muted)}
-.mock-body{padding:18px;display:grid;gap:14px}
-.shop-preview{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
-.prod{background:rgba(11,16,32,.7);border:1px solid var(--line);border-radius:14px;padding:12px}
-.prod-ill{height:86px;border-radius:10px;margin-bottom:10px;background:linear-gradient(135deg,#2b3a8a,#7c5cff 60%,#2dd4bf);position:relative;overflow:hidden}
-.prod-ill.v2{background:linear-gradient(135deg,#0e4a4a,#2dd4bf 60%,#a7f3d0)}
-.prod-ill.v3{background:linear-gradient(135deg,#5b21b6,#ff5ca8 60%,#ffb020)}
-.prod-ill:after{content:"";position:absolute;inset:0;background:radial-gradient(160px 80px at 30% 20%,rgba(255,255,255,.5),transparent 60%)}
-.prod b{font-size:13px;display:block}
-.prod span{font-size:12px;color:var(--muted)}
-.prod .price{color:#5eead4;font-weight:800;margin-top:6px;display:block}
-section{padding:38px 0}
-.sec-head{max-width:760px;margin-bottom:20px}
-.eyebrow{color:var(--cyan);font-weight:800;letter-spacing:1.2px;text-transform:uppercase;font-size:12px}
-.sec-head h2{font-size:clamp(26px,3.5vw,38px);margin:8px 0;line-height:1.15}
-.sec-head p{color:var(--muted)}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:var(--radius);padding:22px;position:relative;overflow:hidden}
-.card.featured{border-color:rgba(124,92,255,.6);box-shadow:0 0 0 1px rgba(124,92,255,.4),var(--shadow)}
-.card h3{margin:10px 0 6px;font-size:21px}
-.tag{font-size:12px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid var(--line);display:inline-block}
-.tag.hot{background:linear-gradient(135deg,var(--violet),var(--pink));border:0;color:white}
-.card ul{margin:14px 0;padding:0;list-style:none;display:grid;gap:9px;color:#dbe2ff;font-size:15px}
-.card ul li:before{content:"✓ ";color:var(--cyan);font-weight:900}
-.price-row{display:flex;align-items:baseline;gap:8px;margin:12px 0}
-.price-row strong{font-size:28px}
-.price-row span{color:var(--muted);font-size:14px}
-.banner{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;background:linear-gradient(135deg,#1a2450,#2a1660 55%,#0a3d3d);border:1px solid var(--line);border-radius:20px;padding:24px;align-items:center}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
-.step{background:rgba(0,0,0,.28);border:1px solid var(--line);border-radius:14px;padding:16px}
-.step b{color:#fff}
-.step p{color:var(--muted);font-size:14px;margin:6px 0 0}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.info-card{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:16px;padding:20px}
-.info-card h3{margin:0 0 8px}
-.kv{display:flex;gap:10px;align-items:flex-start;margin:10px 0;color:#e6ebff}
-.kv i{width:36px;height:36px;flex:0 0 36px;border-radius:10px;display:grid;place-items:center;background:rgba(124,92,255,.18);border:1px solid rgba(124,92,255,.4)}
-.map{border:0;width:100%;height:100%;min-height:340px;border-radius:16px}
-.faq{display:grid;gap:10px;margin-top:14px}
-.faq details{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
-.faq summary{cursor:pointer;font-weight:800}
-.faq p{color:var(--muted)}
-footer{border-top:1px solid var(--line);margin-top:20px;background:rgba(0,0,0,.3)}
-.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px;padding:28px 0}
-.foot a{display:block;color:var(--muted);text-decoration:none;margin:6px 0;font-size:15px}
+.mock-body{padding:20px;display:grid;gap:14px}
+.store-preview{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.pv{background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+.pv i{font-style:normal;font-size:28px}
+.pv b{display:block;margin:8px 0 4px;font-size:14px}
+.pv span{color:var(--mut);font-size:12px}
+.checkline{display:flex;gap:10px;align-items:center;background:rgba(34,211,170,.12);border:1px solid rgba(34,211,170,.35);border-radius:12px;padding:10px 12px;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:26px 0 0}
+.stat{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+.stat b{font-size:20px;display:block}
+.stat span{color:var(--mut);font-size:13px}
+section{padding:54px 0}
+.kicker{color:var(--ac);font-weight:800;letter-spacing:1.4px;font-size:13px;text-transform:uppercase;margin:0 0 8px}
+h2{font-size:clamp(26px,3.4vw,38px);margin:0 0 10px;letter-spacing:-.5px}
+.sub{color:var(--mut);max-width:720px;line-height:1.6;margin:0 0 26px}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden}
+.card.hot{border-color:rgba(255,183,3,.6);box-shadow:0 0 0 1px rgba(255,183,3,.35),0 20px 60px rgba(255,150,0,.18)}
+.tag{position:absolute;top:14px;right:-34px;rotate:35deg;background:var(--ac);color:#1a1000;font-weight:800;font-size:12px;padding:5px 40px}
+.card h3{margin:0;font-size:21px}
+.card p{margin:0;color:var(--mut);font-size:15px;line-height:1.55}
+.card ul{margin:6px 0;padding:0;list-style:none;display:grid;gap:9px;color:#e6eaff;font-size:14.5px}
+.card li::before{content:"✓ ";color:var(--ac3);font-weight:900}
+.price{font-size:14px;color:var(--mut)}
+.price strong{font-size:26px;color:#fff}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+.panel{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.steps{display:grid;gap:12px;margin:18px 0}
+.step{display:flex;gap:12px;align-items:flex-start;background:rgba(0,0,0,.22);border:1px solid var(--line);border-radius:14px;padding:13px 14px}
+.num{flex:0 0 34px;height:34px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,var(--ac2),#c86bff);font-weight:900}
+.step b{display:block}
+.step span{color:var(--mut);font-size:14px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pstep{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:16px;padding:18px}
+.pstep em{font-style:normal;background:rgba(255,183,3,.18);border:1px solid rgba(255,183,3,.4);color:var(--ac);font-weight:800;font-size:13px;padding:4px 10px;border-radius:999px}
+.pstep h4{margin:12px 0 6px}
+.pstep p{margin:0;color:var(--mut);font-size:14px;line-height:1.55}
+.contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:18px}
+.contact-list{display:grid;gap:12px;margin:16px 0}
+.citem{display:flex;gap:12px;align-items:center;background:rgba(0,0,0,.22);border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-decoration:none}
+.citem span.ic{font-size:22px}
+.citem small{display:block;color:var(--mut)}
+.citem strong{display:block}
+.map{border:0;width:100%;height:100%;min-height:340px;border-radius:14px;display:block}
+.mapbox{overflow:hidden;border-radius:14px;border:1px solid var(--line);background:#0e1430;min-height:340px}
+footer{border-top:1px solid var(--line);padding:28px 0 36px;color:var(--mut);font-size:14px;background:rgba(0,0,0,.28)}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+.foot nav{display:flex;gap:14px;flex-wrap:wrap}
+.foot a{color:var(--mut);text-decoration:none}
 .foot a:hover{color:#fff}
-.copy{border-top:1px solid var(--line);padding:14px 0;color:var(--muted);font-size:13px;display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between}
-.wa{position:fixed;right:16px;bottom:16px;z-index:60;text-decoration:none;background:#22c55e;color:#06240f;font-weight:900;padding:13px 16px;border-radius:999px;box-shadow:0 12px 30px rgba(0,0,0,.4);display:flex;gap:8px;align-items:center}
-.reveal{opacity:0;transform:translateY(14px);transition:.6s ease}
-.reveal.on{opacity:1;transform:none}
-@media(max-width:900px){
-  .hero-grid,.banner,.split{grid-template-columns:1fr}
-  .grid3,.steps{grid-template-columns:1fr}
-  .stats{grid-template-columns:1fr 1fr}
+@media(max-width:920px){
+  .hero-grid,.split,.contact-grid{grid-template-columns:1fr}
+  .cards3,.process{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
   .links{display:none}
-  .links.open{display:flex;flex-direction:column;align-items:stretch;position:absolute;top:68px;left:12px;right:12px;background:#131b3d;border:1px solid var(--line);border-radius:14px;padding:14px;z-index:70}
+  .links.open{display:flex;position:absolute;top:70px;left:12px;right:12px;background:#141b3d;border:1px solid var(--line);border-radius:14px;padding:14px;flex-direction:column;align-items:stretch}
   .burger{display:block}
-  .foot{grid-template-columns:1fr}
-  .shop-preview{grid-template-columns:1fr 1fr}
+  .cta-row .btn.ghost{display:none}
 }
 </style>
 </head>
 <body>
-<header>
+
+<header class="top">
   <div class="wrap nav">
-    <a class="logo" href="index.html" aria-label="Execional Build inicio" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">
-      <span class="logo-mark">EB</span>
-      <span>Execional Build<small>Tiendas digitales · Campeche</small></span>
+    <a class="brand" href="index.html" aria-label="Execional Build inicio" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">
+      <span class="logo-mark">E</span>
+      <span><b>Execional Build</b><small>TIENDAS DIGITALES • CAMPECHE</small></span>
     </a>
     <nav class="links" id="menu" aria-label="Navegación principal">
-      <a class="nl" href="#inicio" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a>
-      <a class="nl" href="#paquetes" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Paquetes</a>
-      <a class="nl" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Tienda</a>
-      <a class="nl" href="#sistema" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Sistema de ventas</a>
-      <a class="nl" href="#contacto" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Contacto</a>
-      <a class="btn btn-ghost btn-sm" href="tienda/carrito.html" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Carrito</a>
-      <a class="btn btn-primary btn-sm" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Ver paquetes en tienda</a>
+      <a href="#inicio" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a>
+      <a href="#paquetes" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Paquetes</a>
+      <a href="tienda/" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Tienda</a>
+      <a href="#proceso" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Proceso</a>
+      <a href="#contacto" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Contacto</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Abrir menú" data-eb-editable="link" data-eb-key="index.button.9" data-eb-role="button" data-eb-kind="link">☰</button>
+    <div class="cta-row">
+      <a class="btn ghost" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">📞 981 133 2914</a>
+      <a class="btn solid" href="tienda/" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Ver tienda</a>
+      <button class="burger" id="burger" aria-label="Abrir menú" data-eb-editable="link" data-eb-key="index.button.9" data-eb-role="button" data-eb-kind="link">☰</button>
+    </div>
   </div>
 </header>
 
 <main id="inicio">
+  <!-- HERO -->
   <div class="wrap hero">
     <div class="hero-grid">
       <div>
-        <span class="badge">● Campeche · Lun a Sáb 8am–6pm · Tiendas online</span>
-        <h1 data-eb-editable="text" data-eb-key="index.h1.10" data-eb-role="h1" data-eb-kind="text">Vendemos <span>paquetes de páginas web</span> con tienda para que vendas tus productos</h1>
-        <p class="lead" data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">En <strong>Execional Build</strong> creamos tu página web personalizable con sistema de ventas: catálogo, carrito, pedidos y código de pago. Ideal si quieres vender en línea sin complicaciones.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#paquetes" data-eb-editable="link" data-eb-key="index.a.12" data-eb-role="a" data-eb-kind="link">Ver paquetes</a>
-          <a class="btn btn-ghost" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.13" data-eb-role="a" data-eb-kind="link">Ir a la tienda</a>
-          <a class="btn btn-light" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.14" data-eb-role="a" data-eb-kind="link">Llamar 981 133 2914</a>
+        <span class="badge">● Campeche • Lun a Sáb 8am–6pm • Páginas + tienda online</span>
+        <h1 data-eb-editable="text" data-eb-key="index.h1.10" data-eb-role="h1" data-eb-kind="text">Vendemos <span>paquetes de páginas web</span> con tienda para vender tus productos</h1>
+        <p class="lead" data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">En <strong>Execional Build</strong> te creamos tu página web personalizable con sistema de ventas integrado: catálogo, carrito y pedidos. Ideal si quieres mostrar y vender en internet sin complicarte.</p>
+        <div class="hero-ctas">
+          <a class="btn solid" href="tienda/" data-eb-editable="link" data-eb-key="index.a.12" data-eb-role="a" data-eb-kind="link">🛍️ Explorar la tienda</a>
+          <a class="btn violet" href="#paquetes" data-eb-editable="link" data-eb-key="index.a.13" data-eb-role="a" data-eb-kind="link">Ver paquetes</a>
+          <a class="btn" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.14" data-eb-role="a" data-eb-kind="link">Cotizar por teléfono</a>
         </div>
-        <ul class="mini">
-          <li>🎨 100% personalizable</li>
-          <li>🛒 Tienda online incluida</li>
-          <li>📦 Sistema de ventas</li>
-          <li>⚡ Diseño moderno premium</li>
-        </ul>
-        <div class="stats">
-          <div class="stat"><strong>3 paquetes</strong><span>Básico, Negocio y Premium</span></div>
-          <div class="stat"><strong>Campeche</strong><span>Atención local directa</span></div>
-          <div class="stat"><strong>8–18h</strong><span>Lunes a sábado</span></div>
+        <div class="mini">
+          <div>✅ <strong>100% personalizable</strong><br />diseño a tu medida</div>
+          <div>✅ <strong>Tienda online incluida</strong><br />vende 24/7</div>
+          <div>✅ <strong>Acompañamiento</strong><br />te ayudamos a publicar</div>
         </div>
       </div>
-      <div class="mock" aria-hidden="true">
-        <div class="mock-bar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="url">execionalbuild.mx / tienda</span></div>
+      <div class="mock" aria-hidden="false">
+        <div class="mock-bar">
+          <span class="dot" style="background:#ff5f57"></span>
+          <span class="dot" style="background:#febc2e"></span>
+          <span class="dot" style="background:#28c840"></span>
+          <span style="margin-left:8px;color:#b9c1e6;font-size:13px">execionalbuild.mx — vista previa de tu tienda</span>
+        </div>
         <div class="mock-body">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <strong>Tu tienda lista para vender</strong>
-            <span class="tag hot">Nuevo</span>
+          <div class="store-preview">
+            <div class="pv"><i>🌐</i><b>Página básica</b><span>Presencia + contacto</span></div>
+            <div class="pv"><i>🏪</i><b>Negocio + tienda</b><span>Catálogo y pedidos</span></div>
+            <div class="pv"><i>🚀</i><b>Tienda total</b><span>Ventas + premium</span></div>
           </div>
-          <div class="shop-preview">
-            <div class="prod"><div class="prod-ill"></div><b>Paquete Básico</b><span>Landing personalizable</span><span class="price">Ver en tienda →</span></div>
-            <div class="prod"><div class="prod-ill v2"></div><b>Paquete Negocio</b><span>Web + tienda online</span><span class="price">Ver en tienda →</span></div>
-            <div class="prod"><div class="prod-ill v3"></div><b>Paquete Premium</b><span>Sistema de ventas</span><span class="price">Ver en tienda →</span></div>
-          </div>
-          <div style="background:rgba(0,0,0,.3);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:14px;color:var(--muted)">Carrito · Checkout con código de pago 01 · Mis pedidos con cuenta. Todo dentro de la tienda, sin apps extra.</div>
+          <div class="checkline">✨ Incluye: diseño moderno premium, adaptable a celular, mapa, redes y botón de contacto.</div>
+          <div class="checkline">🛒 Tu tienda: productos, carrito, código de pago 01 e historial de pedidos.</div>
         </div>
       </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>Diseño premium</b><span>moderno y cargado</span></div>
+      <div class="stat"><b>Tienda online</b><span>catálogo y carrito</span></div>
+      <div class="stat"><b>Campeche</b><span>atención local</span></div>
+      <div class="stat"><b>8am – 6pm</b><span>lunes a sábado</span></div>
     </div>
   </div>
 
+  <!-- PAQUETES -->
   <section id="paquetes">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <div class="eyebrow">Paquetes de sitios web</div>
-        <h2 data-eb-editable="text" data-eb-key="index.h2.15" data-eb-role="h2" data-eb-kind="text">Elige tu paquete y empieza a vender en línea</h2>
-        <p data-eb-editable="text" data-eb-key="index.p.16" data-eb-role="p" data-eb-kind="text">Todos son personalizables con tu logo, colores, productos y textos. La compra y el detalle completo están en la tienda.</p>
-      </div>
-      <div class="grid3">
-        <article class="card reveal">
-          <span class="tag">Básico · Landing</span>
-          <h3 data-eb-editable="text" data-eb-key="index.h3.17" data-eb-role="h3" data-eb-kind="text">Página personalizable esencial</h3>
-          <p style="color:var(--muted)" data-eb-editable="text" data-eb-key="index.p.18" data-eb-role="p" data-eb-kind="text">Para presentar tu negocio, servicios y contacto con imagen moderna premium.</p>
+      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.15" data-eb-role="p" data-eb-kind="text">Paquetes de sitios web</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.16" data-eb-role="h2" data-eb-kind="text">Elige el paquete ideal para tu negocio</h2>
+      <p class="sub" data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text">Todos son personalizables. Te creamos la página y le agregamos tienda para que vendas tus productos. Cotiza al <a href="tel:+529811332914" style="color:#fff" data-eb-editable="link" data-eb-key="index.a.18" data-eb-role="a" data-eb-kind="link">981 133 2914</a> o explora los productos en la tienda.</p>
+      <div class="cards3">
+        <article class="card">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.19" data-eb-role="h3" data-eb-kind="text">🌱 Paquete Emprende</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.20" data-eb-role="p" data-eb-kind="text">Para darte a conocer: página de presentación clara, rápida y lista para compartir.</p>
           <ul>
-            <li>Diseño moderno de una página</li>
-            <li>Secciones: inicio, servicios, contacto</li>
-            <li>Botón llamar + mapa Campeche</li>
-            <li>Entrega rápida y adaptable a móvil</li>
+            <li>Página principal personalizada</li>
+            <li>Secciones: servicios, galería y contacto</li>
+            <li>Botón de llamada y redes sociales</li>
+            <li>Mapa de ubicación en Campeche</li>
+            <li>Adaptable a celular y computadora</li>
           </ul>
-          <div class="price-row"><strong>Ideal para empezar</strong></div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn btn-ghost btn-sm" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.19" data-eb-role="a" data-eb-kind="link">Ver en tienda</a>
-            <a class="btn btn-light btn-sm" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.20" data-eb-role="a" data-eb-kind="link">Cotizar</a>
+          <p class="price" data-eb-editable="text" data-eb-key="index.p.21" data-eb-role="p" data-eb-kind="text"><strong>Cotización directa</strong><br />ideal para empezar</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:auto">
+            <a class="btn solid" href="tienda/" data-eb-editable="link" data-eb-key="index.a.22" data-eb-role="a" data-eb-kind="link">Ver en tienda</a>
+            <a class="btn" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.23" data-eb-role="a" data-eb-kind="link">Cotizar</a>
           </div>
         </article>
-        <article class="card featured reveal">
-          <span class="tag hot">Más vendido · Negocio + Tienda</span>
-          <h3 data-eb-editable="text" data-eb-key="index.h3.21" data-eb-role="h3" data-eb-kind="text">Web + tienda online para vender productos</h3>
-          <p style="color:var(--muted)" data-eb-editable="text" data-eb-key="index.p.22" data-eb-role="p" data-eb-kind="text">Tu catálogo, carrito y pedidos listos para que tus clientes compren.</p>
+        <article class="card hot">
+          <span class="tag">MÁS PEDIDO</span>
+          <h3 data-eb-editable="text" data-eb-key="index.h3.24" data-eb-role="h3" data-eb-kind="text">🏪 Paquete Negocio + Tienda</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.25" data-eb-role="p" data-eb-kind="text">Muestra y vende: página completa con catálogo, carrito y pedidos.</p>
           <ul>
-            <li>Todo lo del Básico</li>
-            <li>Catálogo de productos con fotos</li>
-            <li>Carrito + checkout con código 01</li>
-            <li>Mis pedidos con cuenta</li>
-            <li>Inventario y administración simple</li>
+            <li>Todo lo del paquete Emprende</li>
+            <li>Tienda online con catálogo de productos</li>
+            <li>Carrito y checkout con código 01</li>
+            <li>Historial de «Mis pedidos»</li>
+            <li>Diseño premium moderno</li>
           </ul>
-          <div class="price-row"><strong>Recomendado</strong><span>para vender ya</span></div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn btn-primary btn-sm" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.23" data-eb-role="a" data-eb-kind="link">Comprar en tienda</a>
-            <a class="btn btn-ghost btn-sm" href="#sistema" data-eb-editable="link" data-eb-key="index.a.24" data-eb-role="a" data-eb-kind="link">Cómo funciona</a>
+          <p class="price" data-eb-editable="text" data-eb-key="index.p.26" data-eb-role="p" data-eb-kind="text"><strong>Cotización directa</strong><br />el favorito de negocios locales</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:auto">
+            <a class="btn solid" href="tienda/" data-eb-editable="link" data-eb-key="index.a.27" data-eb-role="a" data-eb-kind="link">Explorar catálogo</a>
+            <a class="btn" href="#contacto" data-eb-editable="link" data-eb-key="index.a.28" data-eb-role="a" data-eb-kind="link">Agendar</a>
           </div>
         </article>
-        <article class="card reveal">
-          <span class="tag">Premium · Sistema de ventas</span>
-          <h3 data-eb-editable="text" data-eb-key="index.h3.25" data-eb-role="h3" data-eb-kind="text">Sistema completo + diseño cargado premium</h3>
-          <p style="color:var(--muted)" data-eb-editable="text" data-eb-key="index.p.26" data-eb-role="p" data-eb-kind="text">Para negocios que quieren escalar: más secciones, más impacto visual y control total.</p>
+        <article class="card">
+          <h3 data-eb-editable="text" data-eb-key="index.h3.29" data-eb-role="h3" data-eb-kind="text">🚀 Paquete Tienda Total</h3>
+          <p data-eb-editable="text" data-eb-key="index.p.30" data-eb-role="p" data-eb-kind="text">Para vender en serio: tienda robusta, más secciones y acabado premium.</p>
           <ul>
-            <li>Todo lo del Negocio</li>
-            <li>Diseño premium de alta densidad</li>
-            <li>Secciones extra y promociones</li>
-            <li>Soporte de lanzamiento prioritario</li>
+            <li>Página + tienda completa personalizada</li>
+            <li>Más secciones y contenido destacado</li>
+            <li>Optimización para vender más</li>
+            <li>Soporte de publicación guiado</li>
+            <li>Imagen moderna de alto impacto</li>
           </ul>
-          <div class="price-row"><strong>Escalable</strong><span>mayor impacto</span></div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn btn-ghost btn-sm" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.27" data-eb-role="a" data-eb-kind="link">Ver en tienda</a>
-            <a class="btn btn-light btn-sm" href="#contacto" data-eb-editable="link" data-eb-key="index.a.28" data-eb-role="a" data-eb-kind="link">Agendar</a>
+          <p class="price" data-eb-editable="text" data-eb-key="index.p.31" data-eb-role="p" data-eb-kind="text"><strong>Cotización directa</strong><br />para negocios en crecimiento</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:auto">
+            <a class="btn solid" href="tienda/" data-eb-editable="link" data-eb-key="index.a.32" data-eb-role="a" data-eb-kind="link">Ver tienda</a>
+            <a class="btn" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.33" data-eb-role="a" data-eb-kind="link">Hablar con asesor</a>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="tienda-destacada" style="padding-top:0">
+  <!-- TIENDA DESTACADA -->
+  <section id="tienda">
+    <div class="wrap split">
+      <div class="panel">
+        <p class="kicker" data-eb-editable="text" data-eb-key="index.p.34" data-eb-role="p" data-eb-kind="text">Tienda destacada</p>
+        <h2 data-eb-editable="text" data-eb-key="index.h2.35" data-eb-role="h2" data-eb-kind="text">Compra tus paquetes en nuestra tienda</h2>
+        <p class="sub" style="margin-bottom:8px" data-eb-editable="text" data-eb-key="index.p.36" data-eb-role="p" data-eb-kind="text">Entra a la tienda para ver el catálogo, el detalle de cada paquete, tu carrito y tus pedidos. Todo el proceso de compra vive ahí.</p>
+        <div class="steps">
+          <div class="step"><span class="num">1</span><div><b>Explora el catálogo</b><span>Ve fotos, descripción y disponibilidad.</span></div></div>
+          <div class="step"><span class="num">2</span><div><b>Agrega al carrito</b><span>Elige cantidad y guarda tus productos.</span></div></div>
+          <div class="step"><span class="num">3</span><div><b>Finaliza con código 01</b><span>Checkout seguro y seguimiento en Mis pedidos.</span></div></div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn solid" href="tienda/" data-eb-editable="link" data-eb-key="index.a.37" data-eb-role="a" data-eb-kind="link">🛍️ Ir a la tienda</a>
+          <a class="btn" href="tienda/carrito.html" data-eb-editable="link" data-eb-key="index.a.38" data-eb-role="a" data-eb-kind="link">Ver carrito</a>
+          <a class="btn ghost" href="tienda/pedidos.html" data-eb-editable="link" data-eb-key="index.a.39" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>
+        </div>
+      </div>
+      <div class="panel" style="background:linear-gradient(135deg,#1c2653,#2b1f5e);display:flex;flex-direction:column;justify-content:center">
+        <h3 style="margin:0 0 8px;font-size:22px" data-eb-editable="text" data-eb-key="index.h3.40" data-eb-role="h3" data-eb-kind="text">¿Por qué comprar aquí?</h3>
+        <p style="color:#c9d1f5;line-height:1.6;margin:0 0 16px" data-eb-editable="text" data-eb-key="index.p.41" data-eb-role="p" data-eb-kind="text">Trato directo en Campeche, páginas personalizables con sistema de ventas real y acompañamiento de lunes a sábado de 8am a 6pm.</p>
+        <div style="display:grid;gap:10px">
+          <div class="checkline">📦 Catálogo claro con detalle por producto</div>
+          <div class="checkline">🔒 Pedidos asociados a tu cuenta</div>
+          <div class="checkline">📍 Negocio local en Campeche</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section id="proceso">
     <div class="wrap">
-      <div class="banner reveal">
+      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.42" data-eb-role="p" data-eb-kind="text">Cómo trabajamos</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.43" data-eb-role="h2" data-eb-kind="text">De la idea a tu tienda en 4 pasos</h2>
+      <p class="sub" data-eb-editable="text" data-eb-key="index.p.44" data-eb-role="p" data-eb-kind="text">Horario de atención: lunes a sábado de 8am a 6pm. Llámanos al 981 133 2914.</p>
+      <div class="process">
+        <div class="pstep"><em>Paso 1</em><h4 data-eb-editable="text" data-eb-key="index.h4.45" data-eb-role="h4" data-eb-kind="text">📝 Cuéntanos tu idea</h4><p data-eb-editable="text" data-eb-key="index.p.46" data-eb-role="p" data-eb-kind="text">Nos dices qué vendes y qué estilo quieres. Te recomendamos el paquete ideal.</p></div>
+        <div class="pstep"><em>Paso 2</em><h4 data-eb-editable="text" data-eb-key="index.h4.47" data-eb-role="h4" data-eb-kind="text">🎨 Creamos tu página</h4><p data-eb-editable="text" data-eb-key="index.p.48" data-eb-role="p" data-eb-kind="text">Diseño moderno premium, personalizado con tus colores, fotos y textos.</p></div>
+        <div class="pstep"><em>Paso 3</em><h4 data-eb-editable="text" data-eb-key="index.h4.49" data-eb-role="h4" data-eb-kind="text">🛒 Activamos tu tienda</h4><p data-eb-editable="text" data-eb-key="index.p.50" data-eb-role="p" data-eb-kind="text">Cargamos tus productos para que puedas vender con carrito y pedidos.</p></div>
+        <div class="pstep"><em>Paso 4</em><h4 data-eb-editable="text" data-eb-key="index.h4.51" data-eb-role="h4" data-eb-kind="text">🚀 Publicamos y te guiamos</h4><p data-eb-editable="text" data-eb-key="index.p.52" data-eb-role="p" data-eb-kind="text">Publicamos tu sitio y te enseñamos a usarlo. Soporte en horario laboral.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="wrap">
+      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.53" data-eb-role="p" data-eb-kind="text">Contacto y ubicación</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.54" data-eb-role="h2" data-eb-kind="text">Estamos en Campeche, hablemos</h2>
+      <p class="sub" data-eb-editable="text" data-eb-key="index.p.55" data-eb-role="p" data-eb-kind="text">Llámanos, síguenos en redes o visítanos. Respondemos de lunes a sábado de 8am a 6pm.</p>
+      <div class="contact-grid">
         <div>
-          <div class="eyebrow">Tienda · /tienda</div>
-          <h2 style="margin:8px 0" data-eb-editable="text" data-eb-key="index.h2.29" data-eb-role="h2" data-eb-kind="text">Tus paquetes ya están listos en la tienda</h2>
-          <p style="color:#d6ddff" data-eb-editable="text" data-eb-key="index.p.30" data-eb-role="p" data-eb-kind="text">Explora el catálogo, abre cada paquete, agrégalo al carrito y finaliza con tu código de pago. Tus pedidos quedan guardados en <strong>Mis pedidos</strong>.</p>
-          <div class="cta-row">
-            <a class="btn btn-light" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.31" data-eb-role="a" data-eb-kind="link">Abrir catálogo</a>
-            <a class="btn btn-ghost" href="tienda/carrito.html" data-eb-editable="link" data-eb-key="index.a.32" data-eb-role="a" data-eb-kind="link">Ver carrito</a>
-            <a class="btn btn-ghost" href="tienda/pedidos.html" data-eb-editable="link" data-eb-key="index.a.33" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>
+          <div class="contact-list">
+            <a class="citem" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.56" data-eb-role="a" data-eb-kind="link"><span class="ic">📞</span><span><small>Teléfono / WhatsApp</small><strong>981 133 2914</strong></span></a>
+            <div class="citem"><span class="ic">🕘</span><span><small>Horario</small><strong>Lunes a sábado · 8am a 6pm</strong></span></div>
+            <a class="citem" href="https://www.facebook.com/search/top?q=Execional%20Build" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.57" data-eb-role="a" data-eb-kind="link"><span class="ic">📘</span><span><small>Facebook</small><strong>Execional Build</strong></span></a>
+            <a class="citem" href="https://www.instagram.com/" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.58" data-eb-role="a" data-eb-kind="link"><span class="ic">📸</span><span><small>Instagram</small><strong>Execional Build</strong></span></a>
+            <div class="citem"><span class="ic">📍</span><span><small>Ubicación</small><strong>Campeche, México</strong></span></div>
           </div>
-          <p style="font-size:13px;color:#b9c2df;margin:0" data-eb-editable="text" data-eb-key="index.p.34" data-eb-role="p" data-eb-kind="text">Precios, stock y checkout oficial solo dentro de la tienda. Aquí solo presentamos.</p>
-        </div>
-        <div>
-          <div class="steps">
-            <div class="step"><b>1. Elige</b><p data-eb-editable="text" data-eb-key="index.p.35" data-eb-role="p" data-eb-kind="text">Entra a la tienda y abre el paquete que te guste.</p></div>
-            <div class="step"><b>2. Agrega</b><p data-eb-editable="text" data-eb-key="index.p.36" data-eb-role="p" data-eb-kind="text">Súmalo al carrito con la cantidad que necesites.</p></div>
-            <div class="step"><b>3. Compra</b><p data-eb-editable="text" data-eb-key="index.p.37" data-eb-role="p" data-eb-kind="text">Finaliza y guarda tu código 01. Revisa en pedidos.</p></div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn solid" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.59" data-eb-role="a" data-eb-kind="link">Llamar ahora</a>
+            <a class="btn violet" href="tienda/" data-eb-editable="link" data-eb-key="index.a.60" data-eb-role="a" data-eb-kind="link">Ir a la tienda</a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="sistema">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div class="eyebrow">Sistema de ventas incluido</div>
-        <h2 data-eb-editable="text" data-eb-key="index.h2.38" data-eb-role="h2" data-eb-kind="text">Una tienda online simple para tus clientes y para ti</h2>
-        <p data-eb-editable="text" data-eb-key="index.p.39" data-eb-role="p" data-eb-kind="text">Sin instalaciones raras. Tus clientes compran desde su celular y tú recibes pedidos ordenados.</p>
-      </div>
-      <div class="grid3">
-        <div class="card reveal"><h3 data-eb-editable="text" data-eb-key="index.h3.40" data-eb-role="h3" data-eb-kind="text">🛍️ Catálogo claro</h3><p style="color:var(--muted)" data-eb-editable="text" data-eb-key="index.p.41" data-eb-role="p" data-eb-kind="text">Fotos, descripciones y precios. Tus productos siempre visibles y actualizables.</p></div>
-        <div class="card reveal"><h3 data-eb-editable="text" data-eb-key="index.h3.42" data-eb-role="h3" data-eb-kind="text">🧾 Carrito + código 01</h3><p style="color:var(--muted)" data-eb-editable="text" data-eb-key="index.p.43" data-eb-role="p" data-eb-kind="text">Checkout guiado con código de pago para confirmar cada compra sin confusiones.</p></div>
-        <div class="card reveal"><h3 data-eb-editable="text" data-eb-key="index.h3.44" data-eb-role="h3" data-eb-kind="text">👤 Mis pedidos</h3><p style="color:var(--muted)" data-eb-editable="text" data-eb-key="index.p.45" data-eb-role="p" data-eb-kind="text">Cada cliente ve su historial con su cuenta. Control y confianza para ambos.</p></div>
-      </div>
-      <div class="faq reveal">
-        <details open><summary>¿La página se adapta a mi negocio?</summary><p data-eb-editable="text" data-eb-key="index.p.46" data-eb-role="p" data-eb-kind="text">Sí. Personalizamos textos, colores, logo, productos, fotos y secciones. Es tu tienda, con tu marca Execional Build detrás.</p></details>
-        <details><summary>¿Necesito saber programar?</summary><p data-eb-editable="text" data-eb-key="index.p.47" data-eb-role="p" data-eb-kind="text">No. Nosotros la creamos y te la entregamos lista. Tú solo agregas productos y atiendes pedidos.</p></details>
-        <details><summary>¿Cómo compro un paquete?</summary><p data-eb-editable="text" data-eb-key="index.p.48" data-eb-role="p" data-eb-kind="text">Entra a <a href="tienda/index.html" style="color:#5eead4" data-eb-editable="link" data-eb-key="index.a.49" data-eb-role="a" data-eb-kind="link">la tienda</a>, abre el paquete, agrégalo al carrito y finaliza. Si prefieres, llámanos al 9811332914 de lunes a sábado 8am–6pm.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div class="eyebrow">Contacto · Campeche</div>
-        <h2 data-eb-editable="text" data-eb-key="index.h2.50" data-eb-role="h2" data-eb-kind="text">Hablemos de tu tienda digital</h2>
-        <p data-eb-editable="text" data-eb-key="index.p.51" data-eb-role="p" data-eb-kind="text">Atención directa, sin formularios complicados. Llámanos o visítanos en Campeche.</p>
-      </div>
-      <div class="split">
-        <div class="info-card reveal">
-          <h3 data-eb-editable="text" data-eb-key="index.h3.52" data-eb-role="h3" data-eb-kind="text">Execional Build</h3>
-          <p style="color:var(--muted);margin:0" data-eb-editable="text" data-eb-key="index.p.53" data-eb-role="p" data-eb-kind="text">Vendemos tiendas digitales y paquetes de páginas web personalizables con tienda para que vendas tus productos.</p>
-          <div class="kv"><i>📞</i><div><strong>Teléfono</strong><br><a href="tel:+529811332914" style="color:#5eead4;font-weight:800" data-eb-editable="link" data-eb-key="index.a.54" data-eb-role="a" data-eb-kind="link">981 133 2914</a></div></div>
-          <div class="kv"><i>🕒</i><div><strong>Horario</strong><br>lunes a sábado de 8 a 6 pm</div></div>
-          <div class="kv"><i>📍</i><div><strong>Ubicación</strong><br>Campeche, México</div></div>
-          <div class="kv"><i>🤝</i><div><strong>Redes</strong><br>Facebook: Execional Build<br>Instagram: Execional Build</div></div>
-          <div class="cta-row">
-            <a class="btn btn-primary btn-sm" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.55" data-eb-role="a" data-eb-kind="link">Llamar ahora</a>
-            <a class="btn btn-ghost btn-sm" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.56" data-eb-role="a" data-eb-kind="link">Ir a tienda</a>
-          </div>
-        </div>
-        <div class="info-card reveal" style="padding:10px">
-          <iframe class="map" title="Mapa Execional Build Campeche" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590204.7511493105!2d-90.0833210465046!3d19.18394339423709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5a55d2e2bd4cb3%3A0x18dfb8a962aab997!2sPizzas%20y%20Tacos%20EL%20SUSPIRO!5e1!3m2!1ses-419!2smx!4v1788581362156!5m2!1ses-419!2smx"></iframe>
+        <div class="mapbox">
+          <iframe class="map" title="Mapa de Campeche" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Campeche,Mexico&output=embed"></iframe>
         </div>
       </div>
     </div>
@@ -308,30 +310,26 @@ footer{border-top:1px solid var(--line);margin-top:20px;background:rgba(0,0,0,.3
 
 <footer>
   <div class="wrap foot">
-    <div>
-      <a class="logo" href="index.html" data-eb-editable="link" data-eb-key="index.a.57" data-eb-role="a" data-eb-kind="link"><span class="logo-mark">EB</span><span>Execional Build<small>Paquetes web + tienda online</small></span></a>
-      <p style="color:var(--muted);font-size:14px;max-width:38ch" data-eb-editable="text" data-eb-key="index.p.58" data-eb-role="p" data-eb-kind="text">Páginas web personalizables con sistema de ventas para que vendas tus productos. Campeche · Lun–Sáb 8–18h.</p>
-    </div>
-    <div>
-      <strong>Tienda</strong>
-      <a href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.59" data-eb-role="a" data-eb-kind="link">Catálogo</a>
-      <a href="tienda/carrito.html" data-eb-editable="link" data-eb-key="index.a.60" data-eb-role="a" data-eb-kind="link">Carrito</a>
-      <a href="tienda/pedidos.html" data-eb-editable="link" data-eb-key="index.a.61" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>
-      <a href="#paquetes" data-eb-editable="link" data-eb-key="index.a.62" data-eb-role="a" data-eb-kind="link">Paquetes</a>
-    </div>
-    <div>
-      <strong>Contacto</strong>
-      <a href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.63" data-eb-role="a" data-eb-kind="link">981 133 2914</a>
-      <a href="#contacto" data-eb-editable="link" data-eb-key="index.a.64" data-eb-role="a" data-eb-kind="link">Campeche · mapa</a>
-      <a href="#sistema" data-eb-editable="link" data-eb-key="index.a.65" data-eb-role="a" data-eb-kind="link">Sistema de ventas</a>
-      <a href="#inicio" data-eb-editable="link" data-eb-key="index.a.66" data-eb-role="a" data-eb-kind="link">Inicio</a>
-    </div>
+    <div><strong style="color:#fff">Execional Build</strong> · Paquetes de páginas web con tienda online · Campeche</div>
+    <nav>
+      <a href="#paquetes" data-eb-editable="link" data-eb-key="index.a.61" data-eb-role="a" data-eb-kind="link">Paquetes</a>
+      <a href="tienda/" data-eb-editable="link" data-eb-key="index.a.62" data-eb-role="a" data-eb-kind="link">Tienda</a>
+      <a href="tienda/carrito.html" data-eb-editable="link" data-eb-key="index.a.63" data-eb-role="a" data-eb-kind="link">Carrito</a>
+      <a href="tienda/pedidos.html" data-eb-editable="link" data-eb-key="index.a.64" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>
+      <a href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.65" data-eb-role="a" data-eb-kind="link">981 133 2914</a>
+    </nav>
+    <div>© <span id="yr">2026</span> Execional Build · Lunes a sábado 8am–6pm</div>
   </div>
-  <div class="wrap copy"><span>© 2026 Execional Build · Campeche</span><span>Lun a Sáb 8am–6pm · Facebook / Instagram: Execional Build</span></div>
 </footer>
 
-<a class="wa" href="tel:+529811332914" aria-label="Llamar a Execional Build" data-eb-editable="link" data-eb-key="index.a.67" data-eb-role="a" data-eb-kind="link">📞 981 133 2914</a>
-
 <script src="script.js" defer></script>
+<script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A')m.classList.remove('open')});}
+  var y=document.getElementById('yr'); if(y)y.textContent=new Date().getFullYear();
+})();
+</script>
 </body>
 </html>
