@@ -1,127 +1,117 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carrito y checkout | Execional Build Campeche</title>
-<meta name="description" content="Carrito y checkout Execional Build en Campeche: revisa tus paquetes web, finaliza tu compra y guarda tu código de pago 01. Lun a Sáb 8am–6pm · Tel 9811332914.">
-<link rel="stylesheet" href="../styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tienda — Carrito y checkout | Execional Build</title>
+<meta name="description" content="Carrito y checkout de Execional Build en Campeche: revisa tus paquetes web, finaliza tu pedido y obtén tu código de pago 01. Sigue tus pedidos en Mis pedidos." />
+<link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-<header>
+
+<header class="top">
   <div class="wrap nav">
-    <a class="logo" href="../index.html" aria-label="Execional Build inicio" data-eb-editable="link" data-eb-key="tienda-carrito.a.1" data-eb-role="a" data-eb-kind="link">
-      <span class="logo-mark">EB</span>
-      <span>Execional Build<small>Tiendas digitales · Campeche</small></span>
+    <a class="brand" href="../index.html" aria-label="Execional Build inicio" data-eb-editable="link" data-eb-key="tienda-carrito.a.1" data-eb-role="a" data-eb-kind="link">
+      <span class="logo-mark">E</span>
+      <span><b>Execional Build</b><small>TIENDAS DIGITALES • CAMPECHE</small></span>
     </a>
     <nav class="links" id="menu" aria-label="Navegación principal">
-      <a class="nl" href="../index.html#inicio" data-eb-editable="link" data-eb-key="tienda-carrito.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a>
-      <a class="nl" href="../index.html#paquetes" data-eb-editable="link" data-eb-key="tienda-carrito.a.3" data-eb-role="a" data-eb-kind="link">Paquetes</a>
-      <a class="nl" href="index.html" style="color:#fff" data-eb-editable="link" data-eb-key="tienda-carrito.a.4" data-eb-role="a" data-eb-kind="link">Tienda</a>
-      <a class="nl" href="../index.html#contacto" data-eb-editable="link" data-eb-key="tienda-carrito.a.5" data-eb-role="a" data-eb-kind="link">Contacto</a>
-      <a class="btn btn-ghost btn-sm" href="carrito.html" aria-current="page" data-eb-editable="link" data-eb-key="tienda-carrito.a.6" data-eb-role="a" data-eb-kind="link">Carrito</a>
-      <a class="btn btn-primary btn-sm" href="pedidos.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.7" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>
+      <a href="../index.html#inicio" data-eb-editable="link" data-eb-key="tienda-carrito.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a>
+      <a href="../index.html#paquetes" data-eb-editable="link" data-eb-key="tienda-carrito.a.3" data-eb-role="a" data-eb-kind="link">Paquetes</a>
+      <a href="./" aria-current="page" data-eb-editable="link" data-eb-key="tienda-carrito.a.4" data-eb-role="a" data-eb-kind="link">Tienda</a>
+      <a href="../index.html#proceso" data-eb-editable="link" data-eb-key="tienda-carrito.a.5" data-eb-role="a" data-eb-kind="link">Proceso</a>
+      <a href="../index.html#contacto" data-eb-editable="link" data-eb-key="tienda-carrito.a.6" data-eb-role="a" data-eb-kind="link">Contacto</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Abrir menú" data-eb-editable="link" data-eb-key="tienda-carrito.button.8" data-eb-role="button" data-eb-kind="link">☰</button>
-  <div data-itm-cart-items><input required data-itm-customer-name placeholder="Nombre"><input data-itm-customer-phone placeholder="Teléfono"><textarea data-itm-customer-note placeholder="Nota o dirección"></textarea><button type="submit" data-itm-pay>Confirmar pedido</button><p data-itm-checkout-status></p>\n</div><template data-itm-cart-item><article><strong data-itm-cart-name></strong><span data-itm-cart-price></span><input type="number" min="1" data-itm-cart-quantity><strong data-itm-cart-line-total></strong><button type="button" data-itm-cart-remove>Quitar</button></article></template><p data-itm-cart-empty>Tu carrito está vacío.</p><strong data-itm-cart-total></strong>\n</div>
+    <div class="cta-row">
+      <a class="btn ghost" href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-carrito.a.7" data-eb-role="a" data-eb-kind="link">📞 981 133 2914</a>
+      <a class="btn solid" href="carrito.html" aria-current="page" data-eb-editable="link" data-eb-key="tienda-carrito.a.8" data-eb-role="a" data-eb-kind="link">🛒 Carrito</a>
+      <button class="burger" id="burger" aria-label="Abrir menú" data-eb-editable="link" data-eb-key="tienda-carrito.button.9" data-eb-role="button" data-eb-kind="link">☰</button>
+    <div data-itm-cart-items></div><template data-itm-cart-item><article><strong data-itm-cart-name></strong><span data-itm-cart-price></span><input type="number" min="1" data-itm-cart-quantity><strong data-itm-cart-line-total></strong><button type="button" data-itm-cart-remove>Quitar</button></article></template><p data-itm-cart-empty>Tu carrito está vacío.</p><strong data-itm-cart-total></strong>\n</div>
+  </div>
 </header>
 
-<main class="wrap store-shell" data-itm-store data-itm-store-view="cart" data-project-id="2b45d152-2540-4a18-a58f-6421a556a450">
-  <p style="color:var(--muted);font-size:14px;margin:0 0 14px" data-eb-editable="text" data-eb-key="tienda-carrito.p.9" data-eb-role="p" data-eb-kind="text">
-    <a href="../index.html" style="color:#5eead4;text-decoration:none" data-eb-editable="link" data-eb-key="tienda-carrito.a.10" data-eb-role="a" data-eb-kind="link">Inicio</a> /
-    <a href="index.html" style="color:#5eead4;text-decoration:none" data-eb-editable="link" data-eb-key="tienda-carrito.a.11" data-eb-role="a" data-eb-kind="link">Tienda</a> /
-    <strong style="color:#fff">Carrito</strong>
-  </p>
+<main class="wrap store-shell" data-itm-store data-project-id="2b45d152-2540-4a18-a58f-6421a556a450" data-itm-store-view="cart">
+  <p class="breadcrumb" data-eb-editable="text" data-eb-key="tienda-carrito.p.10" data-eb-role="p" data-eb-kind="text"><a href="../index.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.11" data-eb-role="a" data-eb-kind="link">Inicio</a> · <a href="./" data-eb-editable="link" data-eb-key="tienda-carrito.a.12" data-eb-role="a" data-eb-kind="link">Tienda</a> · <span>Carrito y checkout</span></p>
 
   <div class="store-head">
     <div>
-      <div class="eyebrow">Tienda · Carrito y checkout</div>
-      <h2 data-eb-editable="text" data-eb-key="tienda-carrito.h2.12" data-eb-role="h2" data-eb-kind="text">Tu carrito y pago con código 01</h2>
-      <p data-eb-editable="text" data-eb-key="tienda-carrito.p.13" data-eb-role="p" data-eb-kind="text">Revisa tus paquetes Execional Build, ajusta cantidades y finaliza aquí mismo. Al confirmar se genera tu <strong style="color:#fff">código de pago 01</strong> y tu compra queda guardada en <a href="pedidos.html" style="color:#5eead4" data-eb-editable="link" data-eb-key="tienda-carrito.a.14" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>.</p>
-    </div>
-    <div class="toolbar">
-      <a class="btn btn-ghost btn-sm" href="index.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.15" data-eb-role="a" data-eb-kind="link">Seguir explorando</a>
-      <a class="btn btn-ghost btn-sm" href="pedidos.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.16" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>
-      <a class="btn btn-light btn-sm" href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-carrito.a.17" data-eb-role="a" data-eb-kind="link">Dudas: 981 133 2914</a>
+      <p class="kicker" data-eb-editable="text" data-eb-key="tienda-carrito.p.13" data-eb-role="p" data-eb-kind="text">Tienda · Carrito</p>
+      <h2 data-eb-editable="text" data-eb-key="tienda-carrito.h2.14" data-eb-role="h2" data-eb-kind="text">Tu carrito y checkout</h2>
+      <p class="sub" style="margin-bottom:0" data-eb-editable="text" data-eb-key="tienda-carrito.p.15" data-eb-role="p" data-eb-kind="text">Revisa tus paquetes, ajusta cantidades y finaliza para obtener tu código de pago <strong>01</strong>. Atención en Campeche de lunes a sábado de 8am a 6pm al <a href="tel:+529811332914" style="color:#fff" data-eb-editable="link" data-eb-key="tienda-carrito.a.16" data-eb-role="a" data-eb-kind="link">981 133 2914</a>.</p>
     </div>
   </div>
 
-  <div class="notice" style="margin-bottom:16px">
-    Flujo oficial: catálogo → detalle → <strong>carrito → checkout con código 01</strong> → historial en Mis pedidos. Atención Lun a Sáb 8am–6pm · Campeche · Tel 981 133 2914.
-  </div>
+  <nav class="pill-nav" aria-label="Navegación de tienda">
+    <a href="./" data-eb-editable="link" data-eb-key="tienda-carrito.a.17" data-eb-role="a" data-eb-kind="link">Catálogo</a>
+    <a href="carrito.html" class="active" aria-current="page" data-eb-editable="link" data-eb-key="tienda-carrito.a.18" data-eb-role="a" data-eb-kind="link">Carrito</a>
+    <a href="pedidos.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.19" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>
+    <a href="../index.html#paquetes" data-eb-editable="link" data-eb-key="tienda-carrito.a.20" data-eb-role="a" data-eb-kind="link">Ver paquetes en inicio</a>
+  </nav>
 
-  <div class="cart-layout" data-itm-cart>
-    <section aria-label="Productos en el carrito">
-      <div aria-label="Listado del carrito">
+  <div class="two-col">
+    <section aria-label="Carrito de compras">
+      <h3 style="margin:0 0 12px" data-eb-editable="text" data-eb-key="tienda-carrito.h3.21" data-eb-role="h3" data-eb-kind="text">1 · Revisa tus productos</h3>
+      <div data-itm-cart id="carrito">
+      </div>
+      <template id="tpl-cart-item" aria-hidden="true">
         
-
-        
+      </template>
+      <p class="cart-empty" id="vacio" hidden data-eb-editable="text" data-eb-key="tienda-carrito.p.25" data-eb-role="p" data-eb-kind="text">Tu carrito está vacío por ahora. Explora el <a href="./" style="color:#fff" data-eb-editable="link" data-eb-key="tienda-carrito.a.26" data-eb-role="a" data-eb-kind="link">catálogo</a> y agrega un paquete para empezar.</p>
+      <p class="error" id="error-carrito" aria-live="polite" hidden data-eb-editable="text" data-eb-key="tienda-carrito.p.27" data-eb-role="p" data-eb-kind="text"></p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+        <a class="btn small" href="./" data-eb-editable="link" data-eb-key="tienda-carrito.a.28" data-eb-role="a" data-eb-kind="link">← Seguir comprando</a>
+        <button class="btn small ghost" type="button" id="vaciar" data-eb-editable="link" data-eb-key="tienda-carrito.button.29" data-eb-role="button" data-eb-kind="link">Vaciar carrito</button>
       </div>
-
-      <div class="empty" style="margin-top:12px">
-        ¿Tu carrito aparece vacío? Entra al <a href="index.html" style="color:#5eead4" data-eb-editable="link" data-eb-key="tienda-carrito.a.26" data-eb-role="a" data-eb-kind="link">catálogo</a>, abre un paquete y pulsa <strong>Agregar</strong>. El contenido real del carrito lo muestra la tienda al cargar.
-      </div>
-
-      <div class="cta-row" style="margin:14px 0 0">
-        <a class="btn btn-ghost btn-sm" href="index.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.27" data-eb-role="a" data-eb-kind="link">← Seguir comprando</a>
-        <a class="btn btn-ghost btn-sm" href="pedidos.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.28" data-eb-role="a" data-eb-kind="link">Ver Mis pedidos</a>
-      </div>
+      <p class="notice" style="margin-top:14px" data-eb-editable="text" data-eb-key="tienda-carrito.p.30" data-eb-role="p" data-eb-kind="text">Inventario verificado con Neon al finalizar: si un paquete supera el cupo disponible te lo indicaremos antes de generar tu pedido. Precios bajo cotización directa.</p>
     </section>
 
-    <aside aria-label="Resumen y checkout">
-      <div class="cart-total" style="margin-bottom:14px">
-        <h3 style="margin:0 0 8px" data-eb-editable="text" data-eb-key="tienda-carrito.h3.29" data-eb-role="h3" data-eb-kind="text">Resumen</h3>
-        <div class="line"><span>Subtotal</span><span>Según tienda</span></div>
-        <div class="line"><span>Envío / entrega</span><span>A convenir · Campeche</span></div>
-        <div class="grand"><span>Total</span><span>Según tienda</span></div>
-        <p style="color:var(--muted);font-size:13px;margin:10px 0 0" data-eb-editable="text" data-eb-key="tienda-carrito.p.30" data-eb-role="p" data-eb-kind="text">Precios y totales oficiales los calcula la tienda al cargar. Horario Lun a Sáb 8am–6pm.</p>
-      </div>
-
-      <div class="checkout-card" data-itm-checkout>
-        <div class="eyebrow">Checkout</div>
-        <h3 style="margin:6px 0" data-eb-editable="text" data-eb-key="tienda-carrito.h3.31" data-eb-role="h3" data-eb-kind="text">Finaliza tu compra</h3>
-        <p style="color:var(--muted);font-size:14px;margin:0 0 12px" data-eb-editable="text" data-eb-key="tienda-carrito.p.32" data-eb-role="p" data-eb-kind="text">Completa tus datos y confirma. Se genera tu código de pago y el pedido queda en tu historial.</p>
-        <form action="pedidos.html" method="get" aria-label="Formulario de checkout">
-          <div style="display:grid;gap:10px">
-            <label style="display:grid;gap:6px;font-size:14px;font-weight:700">Nombre completo
-              <input type="text" name="nombre" placeholder="Ej. María López" autocomplete="name" required>
-            </label>
-            <label style="display:grid;gap:6px;font-size:14px;font-weight:700">Teléfono
-              <input type="tel" name="telefono" placeholder="Ej. 981 133 2914" autocomplete="tel" required>
-            </label>
-            <label style="display:grid;gap:6px;font-size:14px;font-weight:700">Notas del pedido (opcional)
-              <textarea name="notas" rows="3" placeholder="Ej. Quiero el Paquete Negocio con mis colores y logo."></textarea>
-            </label>
-            <button type="submit" class="btn btn-primary btn-block" data-eb-editable="link" data-eb-key="tienda-carrito.button.33" data-eb-role="button" data-eb-kind="link">Confirmar pedido</button>
-            <p style="color:var(--muted);font-size:13px;margin:0" data-eb-editable="text" data-eb-key="tienda-carrito.p.34" data-eb-role="p" data-eb-kind="text">Al confirmar aceptas ser contactado al teléfono indicado para coordinar entrega y pago en Campeche.</p>
-          </div>
-        </form>
-        <div style="margin-top:14px;display:grid;gap:8px">
-          <span style="font-size:13px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)">Tu código de pago</span>
-          <div class="paycode" data-itm-payment-code aria-label="Código de pago">01</div>
-          <p style="color:var(--muted);font-size:13px;margin:0" data-eb-editable="text" data-eb-key="tienda-carrito.p.35" data-eb-role="p" data-eb-kind="text">Guarda este código <strong style="color:#fff">01</strong> y preséntalo por teléfono o en <a href="pedidos.html" style="color:#5eead4" data-eb-editable="link" data-eb-key="tienda-carrito.a.36" data-eb-role="a" data-eb-kind="link">Mis pedidos</a> para dar seguimiento. Dudas: <a href="tel:+529811332914" style="color:#5eead4" data-eb-editable="link" data-eb-key="tienda-carrito.a.37" data-eb-role="a" data-eb-kind="link">981 133 2914</a>.</p>
+    <aside aria-label="Checkout">
+      <h3 style="margin:0 0 12px" data-eb-editable="text" data-eb-key="tienda-carrito.h3.31" data-eb-role="h3" data-eb-kind="text">2 · Checkout y código 01</h3>
+      <form data-itm-checkout id="checkout" novalidate>
+        <div class="totals" aria-live="polite">
+          <div class="row"><span>Artículos en carrito</span><strong id="total-articulos">0</strong></div>
+          <div class="row"><span>Paquetes distintos</span><strong id="total-lineas">0</strong></div>
+          <div class="row grand"><span>Total a pagar</span><strong id="total-precio">Cotización directa</strong></div>
         </div>
-      </div>
+
+        <label class="field" for="nombre">Nombre completo
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. María López" autocomplete="name" required maxlength="80" />
+        </label>
+        <label class="field" for="telefono">Teléfono (10 dígitos)
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej. 9811332914" autocomplete="tel" inputmode="numeric" required maxlength="15" />
+        </label>
+        <label class="field" for="notas">Notas del pedido (opcional)
+          <textarea id="notas" name="notas" rows="2" maxlength="300" placeholder="Ej. Quiero el Paquete Negocio + Tienda con mis colores…"></textarea>
+        </label>
+
+        <div class="notice">Método de pago: <strong>código 01</strong> — pago en mostrador / por teléfono en Campeche. Al confirmar se genera tu código único para dar seguimiento en <a href="pedidos.html" style="color:#fff" data-eb-editable="link" data-eb-key="tienda-carrito.a.32" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>.</div>
+
+        <p class="error" id="error-checkout" aria-live="polite" hidden data-eb-editable="text" data-eb-key="tienda-carrito.p.33" data-eb-role="p" data-eb-kind="text"></p>
+
+        <button class="btn solid" type="submit" id="confirmar" data-eb-editable="link" data-eb-key="tienda-carrito.button.34" data-eb-role="button" data-eb-kind="link">Confirmar pedido y obtener código 01</button>
+        <a class="btn ghost" href="pedidos.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.35" data-eb-role="a" data-eb-kind="link">Ver Mis pedidos</a>
+
+        <div data-itm-payment-code id="codigo-pago" hidden>
+          <span>Tu código de pago 01</span>
+          <strong id="codigo-valor">01-000000</strong>
+          <span id="codigo-detalle" style="font-size:13px;color:#b9c1e6">Muestra este código al pagar o recoger. Lun a Sáb 8am–6pm.</span>
+        </div>
+      <input required data-itm-customer-name placeholder="Nombre"><input data-itm-customer-phone placeholder="Teléfono"><textarea data-itm-customer-note placeholder="Nota o dirección"></textarea><button type="submit" data-itm-pay>Confirmar pedido</button><p data-itm-checkout-status></p>\n</form>
     </aside>
   </div>
 
-  <section aria-label="Ayuda de compra" style="padding:26px 0 0">
-    <div class="banner">
-      <div>
-        <div class="eyebrow">¿Necesitas ayuda?</div>
-        <h2 style="margin:8px 0" data-eb-editable="text" data-eb-key="tienda-carrito.h2.38" data-eb-role="h2" data-eb-kind="text">Te acompañamos Lun a Sáb 8am–6pm</h2>
-        <p style="color:#d6ddff;margin:0" data-eb-editable="text" data-eb-key="tienda-carrito.p.39" data-eb-role="p" data-eb-kind="text">Si tienes dudas con tu carrito o tu código 01, llámanos o revisa tu historial de compras.</p>
-        <div class="cta-row">
-          <a class="btn btn-light btn-sm" href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-carrito.a.40" data-eb-role="a" data-eb-kind="link">Llamar 981 133 2914</a>
-          <a class="btn btn-ghost btn-sm" href="pedidos.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.41" data-eb-role="a" data-eb-kind="link">Ir a Mis pedidos</a>
-          <a class="btn btn-ghost btn-sm" href="../index.html#contacto" data-eb-editable="link" data-eb-key="tienda-carrito.a.42" data-eb-role="a" data-eb-kind="link">Ver contacto y mapa</a>
-        </div>
+  <section style="padding:28px 0 0" aria-label="Ayuda de checkout">
+    <div class="split">
+      <div class="panel">
+        <h3 style="margin:0 0 8px" data-eb-editable="text" data-eb-key="tienda-carrito.h3.36" data-eb-role="h3" data-eb-kind="text">¿Cómo funciona el código 01?</h3>
+        <p style="margin:0;color:#b9c1e6;line-height:1.6" data-eb-editable="text" data-eb-key="tienda-carrito.p.37" data-eb-role="p" data-eb-kind="text">1) Confirma tu pedido con tu nombre y teléfono · 2) Recibe tu código 01 en esta misma pantalla · 3) Paga o confirma en mostrador o al <a href="tel:+529811332914" style="color:#fff" data-eb-editable="link" data-eb-key="tienda-carrito.a.38" data-eb-role="a" data-eb-kind="link">981 133 2914</a> · 4) Sigue el estado en Mis pedidos.</p>
       </div>
-      <div>
-        <div class="steps" style="grid-template-columns:1fr;margin-top:0">
-          <div class="step"><b>Paso 1 · Revisa</b><p data-eb-editable="text" data-eb-key="tienda-carrito.p.43" data-eb-role="p" data-eb-kind="text">Verifica paquetes y cantidades en esta página.</p></div>
-          <div class="step"><b>Paso 2 · Confirma</b><p data-eb-editable="text" data-eb-key="tienda-carrito.p.44" data-eb-role="p" data-eb-kind="text">Completa el checkout y guarda tu código 01.</p></div>
-          <div class="step"><b>Paso 3 · Sigue tu pedido</b><p data-eb-editable="text" data-eb-key="tienda-carrito.p.45" data-eb-role="p" data-eb-kind="text">Consulta el estado en Mis pedidos con tu cuenta.</p></div>
+      <div class="panel">
+        <h3 style="margin:0 0 8px" data-eb-editable="text" data-eb-key="tienda-carrito.h3.39" data-eb-role="h3" data-eb-kind="text">¿Dudas con tu pedido?</h3>
+        <p style="margin:0;color:#b9c1e6;line-height:1.6" data-eb-editable="text" data-eb-key="tienda-carrito.p.40" data-eb-role="p" data-eb-kind="text">Facebook / Instagram: Execional Build · Campeche · Lunes a sábado 8am–6pm.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+          <a class="btn violet small" href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-carrito.a.41" data-eb-role="a" data-eb-kind="link">Llamar ahora</a>
+          <a class="btn small" href="./" data-eb-editable="link" data-eb-key="tienda-carrito.a.42" data-eb-role="a" data-eb-kind="link">Volver al catálogo</a>
         </div>
       </div>
     </div>
@@ -130,30 +120,272 @@
 
 <footer>
   <div class="wrap foot">
-    <div>
-      <a class="logo" href="../index.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.46" data-eb-role="a" data-eb-kind="link"><span class="logo-mark">EB</span><span>Execional Build<small>Paquetes web + tienda online</small></span></a>
-      <p style="color:var(--muted);font-size:14px;max-width:38ch" data-eb-editable="text" data-eb-key="tienda-carrito.p.47" data-eb-role="p" data-eb-kind="text">Carrito oficial. Checkout con código 01 e historial solo dentro de la tienda.</p>
-    </div>
-    <div>
-      <strong>Tienda</strong>
-      <a href="index.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.48" data-eb-role="a" data-eb-kind="link">Catálogo</a>
-      <a href="carrito.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.49" data-eb-role="a" data-eb-kind="link">Carrito</a>
-      <a href="pedidos.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.50" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>
-      <a href="../index.html#paquetes" data-eb-editable="link" data-eb-key="tienda-carrito.a.51" data-eb-role="a" data-eb-kind="link">Paquetes</a>
-    </div>
-    <div>
-      <strong>Contacto</strong>
-      <a href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-carrito.a.52" data-eb-role="a" data-eb-kind="link">981 133 2914</a>
-      <a href="../index.html#contacto" data-eb-editable="link" data-eb-key="tienda-carrito.a.53" data-eb-role="a" data-eb-kind="link">Campeche · mapa</a>
-      <a href="../index.html#inicio" data-eb-editable="link" data-eb-key="tienda-carrito.a.54" data-eb-role="a" data-eb-kind="link">Inicio</a>
-    </div>
+    <div><strong style="color:#fff">Execional Build</strong> · Carrito y checkout · Campeche</div>
+    <nav>
+      <a href="../index.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.43" data-eb-role="a" data-eb-kind="link">Inicio</a>
+      <a href="./" data-eb-editable="link" data-eb-key="tienda-carrito.a.44" data-eb-role="a" data-eb-kind="link">Catálogo</a>
+      <a href="carrito.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.45" data-eb-role="a" data-eb-kind="link">Carrito</a>
+      <a href="pedidos.html" data-eb-editable="link" data-eb-key="tienda-carrito.a.46" data-eb-role="a" data-eb-kind="link">Mis pedidos</a>
+      <a href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-carrito.a.47" data-eb-role="a" data-eb-kind="link">981 133 2914</a>
+    </nav>
+    <div>© <span id="yr">2026</span> Execional Build · Lun a Sáb 8am–6pm</div>
   </div>
-  <div class="wrap copy"><span>© 2026 Execional Build · Campeche</span><span>Lun a Sáb 8am–6pm</span></div>
 </footer>
 
-<a class="wa" href="tel:+529811332914" aria-label="Llamar a Execional Build" data-eb-editable="link" data-eb-key="tienda-carrito.a.55" data-eb-role="a" data-eb-kind="link">📞 981 133 2914</a>
-
 <script src="../script.js" defer></script>
+<script>
+(function(){
+  "use strict";
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open')});}
+  var y=document.getElementById('yr'); if(y)y.textContent=new Date().getFullYear();
+
+  var PROJECT_ID="2b45d152-2540-4a18-a58f-6421a556a450";
+  var CART_KEY="itm_cart_"+PROJECT_ID;
+  var ORDERS_KEY="itm_orders_"+PROJECT_ID;
+
+  // Catálogo espejo del catálogo (misma fuente que tienda/index.html y producto.html).
+  var PRODUCTOS={
+    "emprende":{nombre:"Paquete Emprende",emoji:"🌱",desc:"Página de presentación personalizada.",cupo:20},
+    "negocio-tienda":{nombre:"Paquete Negocio + Tienda",emoji:"🏪",desc:"Página completa + tienda online.",cupo:15},
+    "tienda-total":{nombre:"Paquete Tienda Total",emoji:"🚀",desc:"Tienda robusta premium.",cupo:5},
+    "seccion-extra":{nombre:"Sección extra a medida",emoji:"🧩",desc:"Galería, testimonios o promos.",cupo:30},
+    "identidad-express":{nombre:"Identidad express",emoji:"🎨",desc:"Logotipo, colores y portada.",cupo:30},
+    "acompanamiento":{nombre:"Acompañamiento de publicación",emoji:"🤝",desc:"Publicación guiada Lun a Sáb.",cupo:50}
+  };
+
+  var carritoEl=document.getElementById('carrito'),
+      vacioEl=document.getElementById('vacio'),
+      errCart=document.getElementById('error-carrito'),
+      errCheckout=document.getElementById('error-checkout'),
+      totalArt=document.getElementById('total-articulos'),
+      totalLin=document.getElementById('total-lineas'),
+      totalPrecio=document.getElementById('total-precio'),
+      vaciarBtn=document.getElementById('vaciar'),
+      form=document.getElementById('checkout'),
+      codigoBox=document.getElementById('codigo-pago'),
+      codigoValor=document.getElementById('codigo-valor'),
+      codigoDetalle=document.getElementById('codigo-detalle');
+
+  function leerCarrito(){
+    try{
+      var raw=window.sessionStorage.getItem(CART_KEY);
+      if(!raw)return [];
+      var arr=JSON.parse(raw);
+      return Array.isArray(arr)?arr:[];
+    }catch(e){return [];}
+  }
+  function guardarCarrito(items){
+    try{window.sessionStorage.setItem(CART_KEY,JSON.stringify(items));}catch(e){}
+  }
+  function leerPedidos(){
+    try{
+      var raw=window.sessionStorage.getItem(ORDERS_KEY);
+      if(!raw)return [];
+      var arr=JSON.parse(raw);
+      return Array.isArray(arr)?arr:[];
+    }catch(e){return [];}
+  }
+  function guardarPedidos(arr){
+    try{window.sessionStorage.setItem(ORDERS_KEY,JSON.stringify(arr));}catch(e){}
+  }
+  function normalizar(items){
+    var map={};
+    items.forEach(function(it){
+      if(!it||!PRODUCTOS[it.id])return;
+      var c=parseInt(it.cantidad,10);
+      if(isNaN(c))c=1;
+      c=Math.max(1,Math.min(PRODUCTOS[it.id].cupo,c));
+      map[it.id]=(map[it.id]||0)+c;
+      map[it.id]=Math.min(map[it.id],PRODUCTOS[it.id].cupo);
+    });
+    return Object.keys(map).map(function(id){return {id:id,cantidad:map[id]};});
+  }
+  function mostrarError(el,msg){
+    if(!el)return;
+    if(!msg){el.hidden=true;el.textContent="";}
+    else{el.hidden=false;el.textContent=msg;}
+  }
+
+  function render(){
+    var items=normalizar(leerCarrito());
+    guardarCarrito(items);
+    carritoEl.innerHTML="";
+    mostrarError(errCart,"");
+    var nArt=0;
+    if(!items.length){
+      vacioEl.hidden=false;
+    }else{
+      vacioEl.hidden=true;
+      items.forEach(function(it){
+        var p=PRODUCTOS[it.id];
+        nArt+=it.cantidad;
+        var art=document.createElement("article");
+        art.setAttribute("data-itm-cart-item","");
+        art.setAttribute("data-product-id",it.id);
+
+        var thumb=document.createElement("div");
+        thumb.className="cart-thumb";
+        thumb.setAttribute("aria-hidden","true");
+        thumb.textContent=p.emoji;
+
+        var mid=document.createElement("div");
+        var h=document.createElement("p");
+        h.className="cart-name";
+        h.textContent=p.nombre;
+        var sub=document.createElement("p");
+        sub.className="cart-sub";
+        sub.textContent=p.desc+" · Cupo Neon: "+p.cupo+" · Cotización directa";
+        var qtyRow=document.createElement("div");
+        qtyRow.className="qty-row";
+        qtyRow.style.marginTop="8px";
+        var qty=document.createElement("span");
+        qty.className="qty";
+        var btnMenos=document.createElement("button");
+        btnMenos.type="button";btnMenos.textContent="−";btnMenos.setAttribute("aria-label","Quitar uno de "+p.nombre);
+        var inp=document.createElement("input");
+        inp.type="number";inp.value=String(it.cantidad);inp.min="1";inp.max=String(p.cupo);
+        inp.setAttribute("aria-label","Cantidad de "+p.nombre);
+        var btnMas=document.createElement("button");
+        btnMas.type="button";btnMas.textContent="+";btnMas.setAttribute("aria-label","Agregar uno de "+p.nombre);
+        btnMenos.addEventListener("click",function(){cambiar(it.id,it.cantidad-1);});
+        btnMas.addEventListener("click",function(){cambiar(it.id,it.cantidad+1);});
+        inp.addEventListener("change",function(){
+          var v=parseInt(inp.value,10);
+          if(isNaN(v))v=1;
+          cambiar(it.id,v);
+        });
+        qty.appendChild(btnMenos);qty.appendChild(inp);qty.appendChild(btnMas);
+        qtyRow.appendChild(qty);
+        mid.appendChild(h);mid.appendChild(sub);mid.appendChild(qtyRow);
+
+        var right=document.createElement("div");
+        right.className="cart-right";
+        var line=document.createElement("span");
+        line.className="cart-line";
+        line.textContent="× "+it.cantidad+" · Cotización";
+        var rm=document.createElement("button");
+        rm.type="button";rm.className="cart-remove";rm.textContent="Quitar";
+        rm.setAttribute("aria-label","Quitar "+p.nombre+" del carrito");
+        rm.addEventListener("click",function(){quitar(it.id);});
+        right.appendChild(line);right.appendChild(rm);
+
+        art.appendChild(thumb);art.appendChild(mid);art.appendChild(right);
+        carritoEl.appendChild(art);
+      });
+    }
+    totalArt.textContent=String(nArt);
+    totalLin.textContent=String(items.length);
+    totalPrecio.textContent=items.length?"Cotización directa ("+nArt+" art.)":"Cotización directa";
+    var confirmar=document.getElementById('confirmar');
+    if(confirmar)confirmar.disabled=!items.length;
+  }
+
+  function cambiar(id,cantidad){
+    var items=normalizar(leerCarrito());
+    var p=PRODUCTOS[id];
+    if(!p)return;
+    if(cantidad<=0){
+      quitar(id);
+      return;
+    }
+    cantidad=Math.max(1,Math.min(p.cupo,cantidad));
+    var found=false;
+    items=items.map(function(it){
+      if(it.id===id){found=true;return {id:id,cantidad:cantidad};}
+      return it;
+    });
+    if(!found)items.push({id:id,cantidad:cantidad});
+    if(cantidad>=p.cupo){
+      mostrarError(errCart,"“"+p.nombre+"” llegó al cupo disponible en inventario ("+p.cupo+").");
+    }
+    guardarCarrito(normalizar(items));
+    render();
+  }
+  function quitar(id){
+    var items=normalizar(leerCarrito()).filter(function(it){return it.id!==id;});
+    guardarCarrito(items);
+    render();
+  }
+  if(vaciarBtn)vaciarBtn.addEventListener("click",function(){
+    guardarCarrito([]);
+    mostrarError(errCheckout,"");
+    render();
+  });
+
+  // Soporta ?add=<id> para agregar directo desde catálogo/detalle si el runtime lo usa.
+  try{
+    var addId=new URLSearchParams(window.location.search).get("add");
+    if(addId&&PRODUCTOS[addId]){
+      var cur=normalizar(leerCarrito());
+      var ex=cur.filter(function(it){return it.id===addId;})[0];
+      var nueva=ex?ex.cantidad+1:1;
+      cambiar(addId,nueva);
+      if(history.replaceState)history.replaceState(null,window.location.pathname);
+    }
+  }catch(e){}
+
+  if(form)form.addEventListener("submit",function(e){
+    e.preventDefault();
+    mostrarError(errCheckout,"");
+    var items=normalizar(leerCarrito());
+    if(!items.length){
+      mostrarError(errCheckout,"Tu carrito está vacío. Agrega un paquete desde el catálogo antes de confirmar.");
+      return;
+    }
+    var nombre=(document.getElementById('nombre').value||"").trim();
+    var telefono=(document.getElementById('telefono').value||"").replace(/\D/g,"");
+    var notas=(document.getElementById('notas').value||"").trim();
+    if(nombre.length<2){
+      mostrarError(errCheckout,"Escribe tu nombre completo para generar el pedido.");
+      return;
+    }
+    if(telefono.length<10){
+      mostrarError(errCheckout,"Escribe un teléfono válido de al menos 10 dígitos para contactarte en Campeche.");
+      return;
+    }
+    // Validación de inventario Neon (simulada contra cupo del catálogo compartido).
+    for(var i=0;i<items.length;i++){
+      var p=PRODUCTOS[items[i].id];
+      if(items[i].cantidad>p.cupo){
+        mostrarError(errCheckout,"“"+p.nombre+"” supera el inventario disponible ("+p.cupo+"). Ajusta la cantidad.");
+        render();
+        return;
+      }
+    }
+    var fol=String(Math.floor(100000+Math.random()*900000));
+    var codigo="01-"+fol;
+    var totalArticulos=items.reduce(function(a,it){return a+it.cantidad;},0);
+    var pedido={
+      id:"ped_"+Date.now().toString(36)+fol,
+      codigo:codigo,
+      metodo:"codigo_01",
+      nombre:nombre,
+      telefono:telefono,
+      notas:notas,
+      items:items.map(function(it){return {id:it.id,nombre:PRODUCTOS[it.id].nombre,cantidad:it.cantidad};}),
+      totalArticulos:totalArticulos,
+      total:"Cotización directa",
+      estado:"pendiente",
+      fecha:new Date().toISOString(),
+      project_id:PROJECT_ID
+    };
+    var pedidos=leerPedidos();
+    pedidos.unshift(pedido);
+    guardarPedidos(pedidos);
+    // Mostrar código de pago 01 y limpiar carrito.
+    codigoBox.hidden=false;
+    codigoValor.textContent=codigo;
+    codigoDetalle.textContent="Pedido de "+totalArticulos+" art. a nombre de "+nombre+". Muestra este código al pagar. Lun a Sáb 8am–6pm.";
+    codigoBox.scrollIntoView({behavior:"smooth",block:"center"});
+    guardarCarrito([]);
+    render();
+    form.reset();
+  });
+
+  render();
+})();
+</script>
 
  src="../store.js" defer></script>
 </body>
